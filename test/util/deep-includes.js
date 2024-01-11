@@ -1,6 +1,3 @@
-// nested includes and nested elements order doesn't matter
-// testing subsets
-
 function deepIncludes(subs, arr) {
   if (subs.length !== arr.length) return false;
   let matched = [];

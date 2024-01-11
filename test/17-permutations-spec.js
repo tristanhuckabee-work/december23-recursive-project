@@ -1,7 +1,7 @@
 const assert = require("assert");
 
 const permutations = require("../problems/17-bonus-permutations.js");
-const deepIncludes = require('../aa03-recursion-pt4/test/util/deep-includes-order-matters.js');
+const deepIncludes = require('../test/util/deep-includes');
 
 describe("permutations()", function () {
   it("should return all the permutations of the given array", function () {

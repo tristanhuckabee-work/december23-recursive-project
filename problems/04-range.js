@@ -12,8 +12,10 @@ range(7, 6); // []
 
 
 function range(start, end) {
-  // Your code here 
+  if (start >= end) return [];
+  return [start, ...range(start + 1, end)]
 }
+// const range = (s, e) => s >= e ? [] : [s, ...range(s + 1, e)];
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

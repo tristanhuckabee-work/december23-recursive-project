@@ -1,7 +1,7 @@
 const assert = require("assert");
 
 const subsets = require('../problems/15-bonus-subsets');
-const deepIncludes = require('../aa03-recursion-pt4/test/util/deep-includes');
+const deepIncludes = require('../test/util/deep-includes');
 
 describe("subsets()", function () {
   it("should return all the subsets of the given array", function () {

@@ -14,7 +14,10 @@ addToTwelve([1]); // false
 
 
 function addToTwelve(arr) {
-  // Your code here 
+  if (arr.length === 1) return false;
+  if (arr.pop() + arr[arr.length - 1] === 12) return true;
+  
+  return addToTwelve(arr); 
 }
 
 
