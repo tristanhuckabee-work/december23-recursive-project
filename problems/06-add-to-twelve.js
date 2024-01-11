@@ -14,7 +14,14 @@ addToTwelve([1]); // false
 
 
 function addToTwelve(arr) {
-  // Your code here 
+  if (arr.length === 1) return false;
+
+  // if (arr[0] + arr[1] === 12 ) return true;
+  // return addToTwelve(arr.slice(1));
+  
+  if (arr.shift() + arr[0] === 12) return true;
+  // if (arr.pop() + arr[arr.length - 1] === 12) return true;
+  return addToTwelve(arr);
 }
 
 
