@@ -19,9 +19,22 @@ fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
-function fibonacci(n) {
-  // Your code here 
+function fibonacci(n, memo = {}) {
+  if (n <= 2) return 1
+
+  // if (n in memo) {
+  //   return memo[n];
+  // } else {
+  //   let val = fibonacci(n - 1, memo) + fibonacci(n -2, memo);
+  //   memo[n] = val;
+  //   return val;
+  // }
+
+  return fibonacci(n - 1) + fibonacci(n -2);
 }
+
+
+console.log(fibonacci(255))
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
