@@ -21,12 +21,12 @@ exponent(5, 5); // 3125
 ***********************************************************************/
 
 function exponent(num, power) {
-    // Your code here 
-}
   
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
-    module.exports = exponent;
+  module.exports = exponent;
 } catch (e) {
-    module.exports = null;
+  module.exports = null;
 }
